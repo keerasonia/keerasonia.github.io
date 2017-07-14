@@ -1,0 +1,195 @@
+body {
+	background-color: #152935;
+	/*background-image: url('../images/background.jpg');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-position: center center;*/
+}
+
+.navbar {
+  /*background: #7cc7ff;*/
+  background: linear-gradient(to right, #7b4397 0%,#b5238a 59%,#dc2430 87%);
+}
+
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+  height: 128px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
+
+.movielist{
+	padding-top: 10px;
+}
+
+.thumbnail {
+	background-color: #264a60;
+	cursor: pointer;
+}
+
+.is-hide { display: none; }
+
+.info .title {
+  font-family: 'Baloo', cursive;
+  font-size: 18px;
+  color: white;
+	padding: 10px 7px 0 7px;
+	word-wrap: break-word;
+}
+
+.info .subtitle {
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+	padding: 0 7px;
+	color: #ddd;
+	font-size: 11px;
+}
+
+.info .subtitle p {
+	margin: 0 0 0 0;
+}
+
+.bs-example {
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0 -15px 15px;
+  border-color: #e5e5e5 #eee #eee;
+  border-style: solid;
+  border-width: 1px 0;
+  -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+          box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+}
+/* Echo out a label for the example */
+.bs-example:after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /*content: "Songs";*/
+  content: attr(data-title);
+}
+
+.bs-example-padded-bottom {
+  padding-bottom: 24px;
+}
+
+/* Tweak display of the code snippets when following an example */
+.bs-example + .highlight,
+.bs-example + .zero-clipboard + .highlight {
+  margin: -15px -15px 15px;
+  border-width: 0 0 1px;
+  border-radius: 0;
+}
+
+/* Make the examples and snippets not full-width */
+@media (min-width: 768px) {
+  .bs-example {
+  	/*max-width: 50%;*/
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .bs-example + .highlight,
+  .bs-example + .zero-clipboard + .highlight {
+    margin-top: -16px;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .bs-example-standalone {
+    border-radius: 4px;
+  }
+}
+
+/* Undo width of container */
+.bs-example .container {
+  width: auto;
+}
+
+/* Tweak content of examples for optimum awesome */
+.bs-example > p:last-child,
+.bs-example > ul:last-child,
+.bs-example > ol:last-child,
+.bs-example > blockquote:last-child,
+.bs-example > .form-control:last-child,
+.bs-example > .table:last-child,
+.bs-example > .navbar:last-child,
+.bs-example > .jumbotron:last-child,
+.bs-example > .alert:last-child,
+.bs-example > .panel:last-child,
+.bs-example > .list-group:last-child,
+.bs-example > .well:last-child,
+.bs-example > .progress:last-child,
+.bs-example > .table-responsive:last-child > .table {
+  margin-bottom: 0;
+}
+.bs-example > p > .close {
+  float: none;
+}
+
+.song {
+	cursor: pointer;
+}
+
+.song span {
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+.song span:hover {
+	border: 1px solid khaki;
+	background-color: lightskyblue;
+}
+
+.media-heading {
+  font-family: 'Baloo', cursive;
+  font-size: 32px;
+}
+
+.lyrics p {
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+
+input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: white;
+  font-family: 'Baloo', cursive;
+  font-size: 25px;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.input-group-addon {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.input-group-lg > .form-control {
+  border-radius: 0px;
+}
